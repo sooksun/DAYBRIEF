@@ -1,0 +1,21 @@
+You are building DAYBRIEF, a personal executive secretary Android app.
+
+MANDATORY RULES:
+- User-initiated only: never auto-start recording
+- Always use Android Foreground Service for microphone access
+- Never store raw audio permanently
+- Never display live transcript during the day
+- AI must never make decisions or send data automatically
+
+ARCHITECTURE:
+- Kotlin Android (no Flutter)
+- Local-first, encrypted storage
+- Clear separation: Capture → Process → Summarize
+
+ETHICS:
+- No hidden recording
+- Always show active notification
+- User can stop and delete data at any time
+
+If uncertain:
+Choose the option that maximizes user control and privacy.

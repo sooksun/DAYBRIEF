@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary - Teal Green (Figma-matched) -->
+    <color name="primary">#FF2DB89E</color>
+    <color name="primary_container">#FFD4F5ED</color>
+    <color name="on_primary">#FFFFFFFF</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#FF4A6572</color>
+    <color name="secondary_container">#FFCDE5F0</color>
+
+    <!-- Status colors -->
+    <color name="listening_active">#FF2DB89E</color>
+    <color name="listening_pulse">#FFB2DFDB</color>
+    <color name="paused">#FFFFA726</color>
+    <color name="stopped">#FF9E9E9E</color>
+
+    <!-- Background / Surface -->
+    <color name="background">#FFF9FAFB</color>
+    <color name="surface">#FFFFFFFF</color>
+
+    <!-- Text -->
+    <color name="on_surface">#FF1A1C1E</color>
+    <color name="on_surface_variant">#FF6B7280</color>
+
+    <!-- Outline -->
+    <color name="outline">#FFE5E7EB</color>
+
+    <!-- Error -->
+    <color name="error">#FFBA1A1A</color>
+</resources>

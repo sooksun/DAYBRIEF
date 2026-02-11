@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Base theme for DAYBRIEF.
+        Compose handles theming via DayBriefTheme composable,
+        but this XML theme is needed for the splash screen and
+        activity window background.
+    -->
+    <style name="Theme.DayBrief" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>

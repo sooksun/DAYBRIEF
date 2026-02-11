@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">DAYBRIEF</string>
+
+    <!-- Daily Setup Screen -->
+    <string name="setup_header">เตรียมพร้อมวันนี้</string>
+    <string name="setup_subtitle">ตั้งเวลาเริ่ม–สิ้นสุด แล้วกดเริ่มเมื่อพร้อม</string>
+    <string name="setup_schedule_title">ตารางวันนี้</string>
+    <string name="setup_start_time">เริ่ม</string>
+    <string name="setup_end_time">สิ้นสุด</string>
+    <string name="setup_start_today">เริ่มงานวันนี้</string>
+    <string name="setup_privacy_note">DAYBRIEF ฟังเฉพาะเมื่อคุณสั่งเท่านั้น\nข้อมูลทุกอย่างอยู่ในเครื่องของคุณ</string>
+
+    <!-- Focus Mode Screen -->
+    <string name="focus_header">กำลังช่วยจำ</string>
+    <string name="focus_listening_status">กำลังฟังเพื่อจับใจความสำคัญ</string>
+    <string name="focus_paused_status">พักการฟังอยู่</string>
+    <string name="focus_pause">พักการฟัง</string>
+    <string name="focus_resume">ฟังต่อ</string>
+    <string name="focus_mark_event">บันทึกเหตุการณ์สำคัญ</string>
+    <string name="focus_end_day">จบงานวันนี้ &amp; สรุปผล</string>
+    <string name="focus_events_marked">บันทึกแล้ว %d เหตุการณ์</string>
+
+    <!-- End-of-Day Brief Screen (placeholder for Task Group F/G) -->
+    <string name="brief_header">สรุปวันนี้</string>
+    <string name="brief_what_happened">เกิดอะไรขึ้น</string>
+    <string name="brief_action_items">สิ่งที่ต้องทำต่อ</string>
+    <string name="brief_pending">สิ่งที่ยังค้างคา</string>
+
+    <!-- Notification -->
+    <string name="notification_listening_title">DAYBRIEF กำลังช่วยจำ</string>
+    <string name="notification_listening_text">แตะเพื่อเปิดแอป ข้อมูลปลอดภัยในเครื่องคุณ</string>
+    <string name="notification_paused_title">DAYBRIEF พักการฟัง</string>
+    <string name="notification_paused_text">แตะเพื่อกลับไปฟังต่อ</string>
+    <string name="notification_action_stop">หยุด</string>
+    <string name="notification_action_pause">พัก</string>
+    <string name="notification_action_resume">ฟังต่อ</string>
+
+    <!-- Settings -->
+    <string name="settings_title">ตั้งค่า</string>
+    <string name="settings_delete_data">ลบข้อมูลทั้งหมด</string>
+    <string name="settings_delete_confirm">คุณแน่ใจหรือไม่?\nข้อมูลทั้งหมดจะถูกลบอย่างถาวร</string>
+
+    <!-- Common -->
+    <string name="confirm">ยืนยัน</string>
+    <string name="cancel">ยกเลิก</string>
+</resources>
