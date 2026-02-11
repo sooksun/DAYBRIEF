@@ -68,4 +68,5 @@ credentials.json
 
 # Temporary debug files
 screenshot_*.png
+ss_*.png
 ui_dump.xml

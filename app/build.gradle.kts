@@ -84,6 +84,7 @@ dependencies {
     // SQLCipher - Encrypted Storage
     implementation(libs.sqlcipher)
     implementation(libs.sqlite.ktx)
+    implementation(libs.gson)
 
     // Testing
     testImplementation(libs.junit)

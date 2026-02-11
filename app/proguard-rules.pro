@@ -7,5 +7,8 @@
 -keep class javax.inject.** { *; }
 -keep class * extends dagger.hilt.android.internal.managers.ViewComponentManager$FragmentContextWrapper { *; }
 
-# Keep Room entities
+# Keep Room entities and data models used by Gson TypeConverters
 -keep class com.daybrief.app.data.** { *; }
+-keep class com.daybrief.app.viewmodel.ActionItem { *; }
+-keep class com.daybrief.app.viewmodel.PendingIssue { *; }
+-keep class com.daybrief.app.viewmodel.DayEvent { *; }

@@ -10,7 +10,13 @@
     <string name="setup_start_time">เริ่ม</string>
     <string name="setup_end_time">สิ้นสุด</string>
     <string name="setup_start_today">เริ่มงานวันนี้</string>
+    <string name="setup_view_reports">ดูรายงาน</string>
     <string name="setup_privacy_note">DAYBRIEF ฟังเฉพาะเมื่อคุณสั่งเท่านั้น\nข้อมูลทุกอย่างอยู่ในเครื่องของคุณ</string>
+
+    <!-- Report View Screen -->
+    <string name="report_title">รายงาน</string>
+    <string name="report_today">รายงานวันนี้</string>
+    <string name="report_select_date_hint">แตะเพื่อเลือกดูย้อนหลัง</string>
 
     <!-- Focus Mode Screen -->
     <string name="focus_header">กำลังช่วยจำ</string>
@@ -22,11 +28,23 @@
     <string name="focus_end_day">จบงานวันนี้ &amp; สรุปผล</string>
     <string name="focus_events_marked">บันทึกแล้ว %d เหตุการณ์</string>
 
-    <!-- End-of-Day Brief Screen (placeholder for Task Group F/G) -->
-    <string name="brief_header">สรุปวันนี้</string>
-    <string name="brief_what_happened">เกิดอะไรขึ้น</string>
-    <string name="brief_action_items">สิ่งที่ต้องทำต่อ</string>
-    <string name="brief_pending">สิ่งที่ยังค้างคา</string>
+    <!-- Daily Summary / Review Screen -->
+    <string name="summary_header">สรุปวันนี้</string>
+    <string name="summary_generating">กำลังสร้างสรุปงาน…</string>
+    <string name="summary_listening_time">เวลาที่ฟัง</string>
+    <string name="summary_events_count">เหตุการณ์</string>
+    <string name="summary_events_unit">รายการ</string>
+    <string name="summary_overview_title">สรุปภาพรวม</string>
+    <string name="summary_action_items_title">สิ่งที่ต้องทำต่อ</string>
+    <string name="summary_pending_title">สิ่งที่ยังค้างคา</string>
+    <string name="summary_events_title">เหตุการณ์ในวันนี้</string>
+    <string name="summary_save">บันทึกสรุป</string>
+    <string name="summary_saved">บันทึกแล้ว ✓</string>
+    <string name="summary_delete">ลบสรุปวันนี้</string>
+    <string name="summary_delete_confirm_title">ลบข้อมูลวันนี้?</string>
+    <string name="summary_delete_confirm_body">สรุปงานและข้อมูลทั้งหมดของวันนี้จะถูกลบอย่างถาวร\nคุณแน่ใจหรือไม่?</string>
+    <string name="summary_back_home">กลับหน้าหลัก</string>
+    <string name="summary_empty">ยังไม่มีข้อมูลสรุป</string>
 
     <!-- Notification -->
     <string name="notification_listening_title">DAYBRIEF กำลังช่วยจำ</string>

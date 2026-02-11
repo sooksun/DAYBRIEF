@@ -74,7 +74,7 @@ import com.daybrief.app.viewmodel.ListeningViewModel
  */
 @Composable
 fun FocusModeScreen(
-    onStopListening: () -> Unit,
+    onEndDay: () -> Unit,
     viewModel: ListeningViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -121,7 +121,7 @@ fun FocusModeScreen(
                 isPaused = uiState.isPaused,
                 onStopClick = {
                     viewModel.stopListening()
-                    onStopListening()
+                    onEndDay()
                 }
             )
 
@@ -184,7 +184,7 @@ fun FocusModeScreen(
                     .clip(RoundedCornerShape(8.dp))
                     .clickable {
                         viewModel.stopListening()
-                        onStopListening()
+                        onEndDay()
                     }
                     .padding(horizontal = 16.dp, vertical = 12.dp),
                 verticalAlignment = Alignment.CenterVertically,

@@ -5,7 +5,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.daybrief.app.ui.screens.DailySetupScreen
+import com.daybrief.app.ui.screens.DailySummaryScreen
 import com.daybrief.app.ui.screens.FocusModeScreen
+import com.daybrief.app.ui.screens.ReportViewScreen
 
 /**
  * Navigation routes for DAYBRIEF.
@@ -13,14 +15,16 @@ import com.daybrief.app.ui.screens.FocusModeScreen
 object Routes {
     const val DAILY_SETUP = "daily_setup"
     const val FOCUS_MODE = "focus_mode"
+    const val DAILY_SUMMARY = "daily_summary"
+    const val REPORTS = "reports"
 }
 
 /**
  * Main navigation graph for the app.
  *
- * Flow: DailySetup -> FocusMode
- * User starts on the setup screen and navigates to focus mode
- * when they tap "Start Today".
+ * Flow: DailySetup -> FocusMode -> DailySummary -> DailySetup
+ * User starts on the setup screen, enters focus mode,
+ * then reviews the daily summary before returning home.
  */
 @Composable
 fun DayBriefNavGraph(
@@ -34,16 +38,33 @@ fun DayBriefNavGraph(
             DailySetupScreen(
                 onStartListening = {
                     navController.navigate(Routes.FOCUS_MODE) {
-                        // Don't keep setup screen in back stack during active session
+                        popUpTo(Routes.DAILY_SETUP) { inclusive = false }
+                    }
+                },
+                onViewReports = { navController.navigate(Routes.REPORTS) }
+            )
+        }
+
+        composable(Routes.REPORTS) {
+            ReportViewScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+
+        composable(Routes.FOCUS_MODE) {
+            FocusModeScreen(
+                onEndDay = {
+                    // Navigate to summary screen after ending the day
+                    navController.navigate(Routes.DAILY_SUMMARY) {
                         popUpTo(Routes.DAILY_SETUP) { inclusive = false }
                     }
                 }
             )
         }
 
-        composable(Routes.FOCUS_MODE) {
-            FocusModeScreen(
-                onStopListening = {
+        composable(Routes.DAILY_SUMMARY) {
+            DailySummaryScreen(
+                onBackToSetup = {
                     navController.navigate(Routes.DAILY_SETUP) {
                         popUpTo(Routes.DAILY_SETUP) { inclusive = true }
                     }

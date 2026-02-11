@@ -27,6 +27,9 @@ workManager = "2.10.0"
 sqlcipher = "4.5.4"
 sqliteKtx = "2.4.0"
 
+# JSON (Room TypeConverters)
+gson = "2.11.0"
+
 # Testing
 junit = "4.13.2"
 junitExt = "1.2.1"
@@ -67,6 +70,9 @@ work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version
 # Security / Encryption
 sqlcipher = { group = "net.zetetic", name = "android-database-sqlcipher", version.ref = "sqlcipher" }
 sqlite-ktx = { group = "androidx.sqlite", name = "sqlite-ktx", version.ref = "sqliteKtx" }
+
+# JSON
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
 # Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }
